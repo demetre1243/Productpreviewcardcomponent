@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    color: hsl(228, 12%, 48%);
+}
+
+.title {
+    font-family: "Fraunces", serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    width: 600px;
+}
+
+.product-img {
+    flex: 1 0 50%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info {
+    padding: 35px;
+}
+
+.tag {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.price-box {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.price {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 1.7rem;
+    margin-right: 20px;
+}
+
+.old-price {
+    text-decoration: line-through;
+}
+
+.btn {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: hsl(158, 45%, 20%);
+}
+
+.footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+.footer a {
+    color: hsl(158, 36%, 37%);
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .title {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .price-box {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .product-img {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0;
+    }
+}
