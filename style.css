@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -12,7 +12,7 @@ body {
     color: hsl(228, 12%, 48%);
 }
 
-.title {
+h1 {
     font-family: "Fraunces", serif;
     color: hsl(212, 21%, 14%);
     font-size: 2rem;
@@ -25,7 +25,7 @@ main {
     min-height: 100vh;
 }
 
-.card {
+section {
     background-color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: row;
@@ -33,87 +33,95 @@ main {
     width: 600px;
 }
 
-.product-img {
+img {
     flex: 1 0 50%;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.info {
-    padding: 35px;
-}
-
-.tag {
+.category {
     text-transform: uppercase;
     letter-spacing: 4px;
 }
 
-.price-box {
+.product-desc {
+    padding: 35px;
+}
+
+.prices {
     display: flex;
     align-items: center;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 
-.price {
+.sale-price {
     font-family: "Fraunces", serif;
-    color: hsl(158, 36%, 37%);
+    color:hsl(158, 36%, 37%);
     font-size: 1.7rem;
     margin-right: 20px;
 }
 
-.old-price {
+.list-price {
     text-decoration: line-through;
 }
 
-.btn {
+button {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
     background-color: hsl(158, 36%, 37%);
-    color: white;
+    color: hsl(0, 0%, 100%);
     padding: 20px;
-    border: none;
+    border-style: none;
     border-radius: 10px;
     height: 50px;
     width: 100%;
-    cursor: pointer;
 }
 
-.btn:hover,
-.btn:active {
+button:hover {
     background-color: hsl(158, 45%, 20%);
 }
 
-.footer {
+button:active {
+    background-color: hsl(158, 45%, 20%);
+}
+
+.fa-cart-shopping {
+    margin-right: 10px;
+}
+
+.attribution {
     font-size: 11px;
     text-align: center;
 }
 
-.footer a {
+.attribution a {
     color: hsl(158, 36%, 37%);
 }
 
 @media only screen and (max-width: 600px) {
-    .card {
+    section {
         flex-direction: column;
         width: 400px;
     }
 
-    .title {
+    h1 {
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    .price-box {
+    .prices {
+        display: flex;
+        align-items: center;
         margin-top: 20px;
         margin-bottom: 20px;
     }
 
-    .product-img {
+    img {
         width: 100%;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
-        border-bottom-left-radius: 0;
+        border-bottom-left-radius: 0px;
     }
 }
